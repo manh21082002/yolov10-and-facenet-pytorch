@@ -21,7 +21,7 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-###2. Chạy chương trình tạo dataset:
+### 2. Chạy chương trình tạo dataset:
 ```bash
 python .\build_dataset.py -o .\dataset
 ```
@@ -32,7 +32,7 @@ Sau khi chạy chương trình, nhập tên của người đầu tiên mà bạ
 - Nhấn q để thoát chương trình.
 
 
-###3. Chạy chương trình nhận diện khuôn mặt thời gian thực:
+### 3. Chạy chương trình nhận diện khuôn mặt thời gian thực:
 Sau khi đã có dataset và đã mã hóa khuôn mặt, chạy chương trình nhận diện khuôn mặt trong thời gian thực từ webcam bằng lệnh sau:
 
 ```bash
