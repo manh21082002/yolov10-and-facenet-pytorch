@@ -1,0 +1,6 @@
+# Bỏ qua môi trường ảo
+env/
+venv/
+
+# Bỏ qua thư mục testing
+testing/
