@@ -10,6 +10,7 @@ Dự án này sử dụng **YOLOv10** để phát hiện khuôn mặt và **Face
 # Tạo môi trường ảo
 python -m venv env
 
+```bash
 # Kích hoạt môi trường ảo:
 # Trên Windows:
 .\env\Scripts\activate
@@ -17,13 +18,13 @@ python -m venv env
 source env/bin/activate
 
 # Cài đặt các phụ thuộc từ tệp requirements.txt
-pip install -r requirements.txt
 ```bash
+pip install -r requirements.txt
+
 
 ###2. Chạy chương trình tạo dataset:
 ```bash
 python .\build_dataset.py -o .\dataset
-```bash
 
 Hướng dẫn sử dụng:
 Sau khi chạy chương trình, nhập tên của người đầu tiên mà bạn muốn chụp ảnh.
@@ -37,7 +38,6 @@ Sau khi đã có dataset và đã mã hóa khuôn mặt, chạy chương trình 
 
 ```bash
 python .\recognize_faces_realtime.py -e .\encode.pickle
-```bash
 
 Hướng dẫn sử dụng:
 - Sau khi chạy chương trình, hệ thống sẽ nhận diện khuôn mặt theo thời gian thực.
