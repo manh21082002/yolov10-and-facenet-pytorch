@@ -15,7 +15,7 @@ args = vars(ap.parse_args())
 
 # Load YOLO model
 print("[INFO] loading YOLO model...")
-yolo_model = YOLO("D:/AI_programing_lastterm/weight/best.pt")
+yolo_model = YOLO("./weight/best.pt")
 
 # Load FaceNet (InceptionResnetV1)
 print("[INFO] loading FaceNet model...")

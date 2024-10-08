@@ -11,7 +11,7 @@ from imutils import paths
 
 # Load YOLO model
 print("[INFO] loading YOLO model...")
-yolo_model = YOLO("D:/AI_programing_lastterm/weight/best.pt")
+yolo_model = YOLO("./weight/best.pt")
 
 # Load FaceNet (InceptionResnetV1)
 print("[INFO] loading FaceNet model...")
@@ -19,7 +19,7 @@ facenet_model = InceptionResnetV1(pretrained='vggface2').eval().to('cuda' if tor
 
 # Load known face encodings
 print("[INFO] loading encodings...")
-with open("D:/AI_programing_lastterm/encode.pickle", "rb") as f:
+with open("./encode.pickle", "rb") as f:
     data = pickle.load(f)
 
 # Preprocessing cho FaceNet
@@ -31,7 +31,7 @@ preprocess = transforms.Compose([
 ])
 
 # Lấy tất cả các đường dẫn ảnh từ dataset
-dataset_dir = "D:/AI_programing_lastterm/dataset"
+dataset_dir = "./dataset"
 imagePaths = list(paths.list_images(dataset_dir))
 
 # Duyệt qua các ảnh trong dataset
